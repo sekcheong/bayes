@@ -1,0 +1,11 @@
+newgraph
+xaxis size 4 min 25 max 100 label : Training set size
+yaxis size 4 min 0 max 1 mhash 4 label : Accuracy
+
+title : Training set size vs. Accuracy
+
+newcurve marktype circle linetype solid label : Naive 
+  pts 25 0.791667  50 0.845238  75 0.857143  100 0.857143
+
+newcurve marktype triangle linetype dashed color 1 0 0 label : TAN 
+  pts 25 0.750000  50 0.797619  75 0.827381  100 0.833333
