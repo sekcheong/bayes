@@ -1,12 +1,12 @@
-package edu.wisc.ml.test;
+package ml.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import edu.wisc.ml.data.DataSet;
-import edu.wisc.ml.learner.*;
-import edu.wisc.ml.reader.ArffReader;
-import edu.wisc.ml.util.Util;
+import ml.data.DataSet;
+import ml.learner.*;
+import ml.reader.ArffReader;
+import ml.utils.Utils;
 
 public class Test {
 
@@ -19,7 +19,7 @@ public class Test {
 		ArrayList<Double> acc = new ArrayList<Double>();
 		
 		//DataSet[] dataSets = Util.stratifySamples(train, numSets, setSize);
-		DataSet[] dataSets = Util.randomSamples(train, numSets, setSize);
+		DataSet[] dataSets = Utils.randomSamples(train, numSets, setSize);
 		for (int i = 0; i < dataSets.length; i++) {
 			learner.train(dataSets[i]);
 			double a = learner.test(test);

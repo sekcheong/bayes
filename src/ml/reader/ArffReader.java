@@ -1,4 +1,4 @@
-package edu.wisc.ml.reader;
+package ml.reader;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,11 +6,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.wisc.ml.data.DataSet;
-import edu.wisc.ml.data.Feature;
-import edu.wisc.ml.data.Instance;
-import edu.wisc.ml.data.Value;
-import edu.wisc.ml.reader.Token.TokenType;
+import ml.data.DataSet;
+import ml.data.Feature;
+import ml.data.Instance;
+import ml.data.Value;
+import ml.reader.Token.TokenType;
 
 public class ArffReader {
 	private static final String DECL_RELATION = "relation";

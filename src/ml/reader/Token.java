@@ -1,4 +1,4 @@
-package edu.wisc.ml.reader;
+package ml.reader;
 
 public class Token {
 	

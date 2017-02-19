@@ -1,8 +1,8 @@
-package edu.wisc.ml.data;
+package ml.data;
 
 import java.util.Date;
 
-import edu.wisc.ml.util.Util;
+import ml.utils.Utils;
 
 
 public class Value implements Comparable<Value> {
@@ -105,9 +105,9 @@ public class Value implements Comparable<Value> {
 				if (v.endsWith(".0")) v = v.substring(0,v.length()-2);
 				return v;
 			case DISCRETE:
-				return Util.formatString(_feature.labelAt(_intValue));
+				return Utils.formatString(_feature.labelAt(_intValue));
 			case STRING:
-				return Util.formatString((String)_objectValue);
+				return Utils.formatString((String)_objectValue);
 			case DATE:
 				return "\"" + _feature.dateFormat().format((Date)_objectValue) + "\"";
 		}

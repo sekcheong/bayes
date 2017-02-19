@@ -1,12 +1,12 @@
-package edu.wisc.ml.learner;
+package ml.learner;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import edu.wisc.ml.data.DataSet;
-import edu.wisc.ml.data.Feature;
-import edu.wisc.ml.data.Instance;
+import ml.data.DataSet;
+import ml.data.Feature;
+import ml.data.Instance;
 
 public class TanNaiveBayes extends AbstractLearner {
 	private DataSet _dataSet;

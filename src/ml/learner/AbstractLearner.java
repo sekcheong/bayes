@@ -1,7 +1,7 @@
-package edu.wisc.ml.learner;
+package ml.learner;
 
-import edu.wisc.ml.data.DataSet;
-import edu.wisc.ml.data.Instance;
+import ml.data.DataSet;
+import ml.data.Instance;
 
 public abstract class AbstractLearner implements Learner {
 	private VerboseMode _verboseMode = VerboseMode.NONE;

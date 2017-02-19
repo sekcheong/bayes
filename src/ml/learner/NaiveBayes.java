@@ -1,6 +1,6 @@
-package edu.wisc.ml.learner;
+package ml.learner;
 
-import edu.wisc.ml.data.*;
+import ml.data.*;
 
 public class NaiveBayes extends AbstractLearner {
 	private int[][][] _counts;

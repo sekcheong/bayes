@@ -1,14 +1,14 @@
-package edu.wisc.ml.util;
+package ml.utils;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import edu.wisc.ml.data.DataSet;
-import edu.wisc.ml.data.Instance;
+import ml.data.DataSet;
+import ml.data.Instance;
 
 
-public class Util {
+public class Utils {
 	public static String formatString(String str) {
 		str = str.replace("\n", "\\n");
 		str = str.replace("\r", "\\r");

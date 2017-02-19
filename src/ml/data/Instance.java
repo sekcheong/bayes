@@ -1,4 +1,4 @@
-package edu.wisc.ml.data;
+package ml.data;
 
 import java.util.Iterator;
 

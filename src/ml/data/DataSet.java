@@ -1,11 +1,11 @@
-package edu.wisc.ml.data;
+package ml.data;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import edu.wisc.ml.util.Util;
+import ml.utils.Utils;
 
 
 public class DataSet {
@@ -105,7 +105,7 @@ public class DataSet {
 		StringBuilder sb = new StringBuilder();
 		
 		if (_relation!=null && !_relation.isEmpty()) {
-			sb.append("@relation ").append(Util.formatString(this.relation())).append("\n");
+			sb.append("@relation ").append(Utils.formatString(this.relation())).append("\n");
 		}
 		
 		for (Feature f:this.features()) {

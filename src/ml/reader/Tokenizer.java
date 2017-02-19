@@ -1,9 +1,9 @@
-package edu.wisc.ml.reader;
+package ml.reader;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 
-import edu.wisc.ml.reader.Token.TokenType;
+import ml.reader.Token.TokenType;
 
 public class Tokenizer {
 	private BufferedReader _br;

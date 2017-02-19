@@ -1,10 +1,10 @@
-package edu.wisc.ml.data;
+package ml.data;
 
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 
-import edu.wisc.ml.util.Util;
+import ml.utils.Utils;
 
 public class Feature {
 	private String _name;
@@ -76,12 +76,12 @@ public class Feature {
 	@Override
 	public String toString() {
 		StringBuffer sb = new StringBuffer();
-		sb.append("@attribute ").append(Util.formatString(_name)).append(" ");
+		sb.append("@attribute ").append(Utils.formatString(_name)).append(" ");
 		switch (_type) {
 			case DISCRETE:
 				sb.append("{");
 				for (String s:_labels) { 
-					sb.append( Util.formatString(s)).append(",");
+					sb.append( Utils.formatString(s)).append(",");
 				}
 				if (sb.length()>1) sb.setLength(sb.length()-1);
 				sb.append("}");
